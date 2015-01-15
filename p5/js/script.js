@@ -31,7 +31,7 @@ function loadData() {
 
   // This builds the URL for a Street View image resource.
   urlStreetView = 'http://maps.googleapis.com/maps/api/streetview?size=600x40' +
-  '0&location=' + locationString;
+    '0&location=' + locationString;
 
   // This places the Street View image on the page.
   $body.append('<img class="bgimg" src="' + urlStreetView + '">');
@@ -57,7 +57,7 @@ function loadData() {
   // The search I used to find random people's NYTimes API key is:
   // https://github.com/search?q=api.nytimes.com%2Fsvc%2Fsearch%2Fv2%2Farticlesearch.json+api-key&type=Code
   urlNYT = 'http://api.nytimes.com/svc/search/v2/articlesearch.json?q=' +
-  cityString + '&api-key=e7f754fbb084a342de0efe77f721de64:11:70185922';
+    cityString + '&api-key=e7f754fbb084a342de0efe77f721de64:11:70185922';
 
   // This is the line that starts (and sees finished) the process of fetching
   // and rendering NYT articles on the page.
@@ -80,7 +80,7 @@ function loadData() {
       snippet = article.snippet;
 
       articleHTML = '<li class="article"><a href="' + webURL + '"' + '>' +
-      headline + '</a>' + '<p>' + snippet + '</p></li>';
+        headline + '</a>' + '<p>' + snippet + '</p></li>';
 
       $nytElem.append(articleHTML)
     }
@@ -88,7 +88,7 @@ function loadData() {
 
   function errorHandler() {
     $nytHeaderElem.text('Articles from The New York Times on ' + cityString +
-    ' Could Not Be Loaded.');
+      ' Could Not Be Loaded.');
   }
 
   /* END SECTION: New York Times Articles */
@@ -106,7 +106,7 @@ function loadData() {
   // and rendering links to Wikipedia articles on the page.
   $.ajax({
     url: 'http://en.wikipedia.org/w/api.php?action=opensearch&search=' +
-    cityString + '&format=json',
+      cityString + '&format=json',
 
     dataType: 'jsonp',
 
@@ -121,7 +121,7 @@ function loadData() {
 
   function appendWikipediaLink(member) {
     $wikiElem.append('<li><a href="http://en.wikipedia.org/w/index.php?title=' +
-    member + '">' + member + '</a></li>');
+      member + '">' + member + '</a></li>');
   }
 
   /* END SECTION: Wikipedia Articles */
