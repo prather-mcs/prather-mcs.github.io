@@ -17,11 +17,140 @@
 
   <style>
 
-    body {}
-    h1 {}
-    ul {}
-    li {}
-    p {}
+    @font-face {
+      /* latin normal */
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    }
+
+    @font-face {
+      /* latin bold */
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    }
+
+    @font-face {
+      /* latin italic */
+      font-family: 'Open Sans';
+      font-style: italic;
+      font-weight: 400;
+      src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://fonts.gstatic.com/s/opensans/v10/xjAJXh38I15wypJXxuGMBo4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    }
+
+    @font-face {
+      /* latin bold and italic */
+      font-family: 'Open Sans';
+      font-style: italic;
+      font-weight: 700;
+      src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(http://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxolIZu-HDpmDIZMigmsroc4.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body, h1, h2, h3, h4, h5, p, ul {
+      margin: 0;
+      padding: 0;
+      font-weight: normal;
+    }
+
+    body {
+      background-color: #999;
+    }
+
+    main {
+      font: 16px "Open Sans", "Arial", sans-serif;
+      max-width: 800px;
+      background-color: #fff;
+      margin: 0 auto;
+      margin-top: 16px;
+      padding: 10px 18px;
+      border: 1px solid black;
+      border-radius: 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: normal;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    h3 {
+      font-size: 24px;
+      margin-left: -20px;
+    }
+
+    h4 {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    h5 {
+      font-size: 16px;
+    }
+
+    p {
+
+    }
+
+    p + p {
+      margin-top: 1em;
+    }
+
+    header a {
+      text-decoration: none;
+      color: blue;
+      border-bottom: 1px dashed blue;
+    }
+
+    ul {
+      padding: 10px 20px;
+    }
+
+    li {
+
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    .major {
+      padding-left: 20px;
+    }
+
+    .unit {
+      border-radius: 8px;
+      padding: 10px 20px;
+      background-color: #ccc;
+    }
+
+    .unit + .unit {
+      margin-top: 20px;
+    }
+
+    .course-links, .final-project {
+      border-radius: 8px;
+      margin-bottom: 12px;
+      padding: 16px;
+      background-color: #fff;
+      font-size: 15px;
+    }
+
+    .final-project {
+    }
 
   </style>
 
@@ -30,26 +159,296 @@
 
 <body>
 
-  <h1>GitHub Pages: <a href="https://github.com/prather-mcs">prather-mcs</a></h1>
-  <p>I brought a portfolio site from a PageSpeed Insights score of 30 to (almost) 100!
-    <ul>
-      <li>See the original, un-optimized version:<br>
-        <a href="https://prather-mcs.github.io/p0">https://prather-mcs.github.io/p0</a>
-      </li>
-      <li>See the same page after it has been fully optimized:<br>
-        <a href="https://prather-mcs.github.io/p4">https://prather-mcs.github.io/p4</a>
-      </li>
-    </ul>
-  </p>
+  <main>
 
-  <p>I wrote the object-oriented JavaScript to make this re-make of the classic arcade game "Frogger" work:
-    <ul>
-      <li>Play it now:<br>
-        <a href="http://prather-mcs.github.io/p3">http://prather-mcs.github.io/p3</a><br>
-        <i>(https not available)</i>
-      </li>
-    </ul>
-  </p>
+    <header>
+
+      <h1>GitHub Home Page: <a href="https://github.com/prather-mcs">Matthew Prather</a></h1>
+
+    </header>
+
+    <div>
+      <p>Jump to Section 1.</p>
+      <p>Jump to Section 2.</p>
+    </div>
+
+
+    <section>
+
+      <h2>Section 1: My Work As A Student</h2>
+
+      <p>I began studying for a career in Computer Application Development in 2014. Towards this goal, I used the online-education service Udacity almost exclusively.</p>
+
+      <p>At first, I used their free courseware, and I really got some good practice doing that. However, when they introduced "nanodegrees" in October 2014 I elected to purse the Front-End Web Development Nanodegree. This was a new type of credential program aimed at giving students the skills to enter Front-End Web Development careers and jobs. You can read more about Udacity's nanodegrees <a href="https://www.udacity.com/nanodegree" target="_blank">here</a>, and about the "FEND" program <a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001" target="_blank">here</a>.</p>
+
+      <p>Section 1a will be showcasing the projects and code I wrote as a nanodegree student, and Section 1b will list and explain the other Udacity courses I have completed.</p>
+
+
+      <section class="major">
+
+        <h3>Section 1a: Front-End Nanodegree Projects</h3>
+
+        <br>
+        <p>These are presented in reverse chronological order, so that visitors can most easily see the more challenging projects.</p>
+        <br><br>
+
+        <section class="unit">
+
+          <h4>Unit 6</h4>
+          <p>in progress</p>
+
+        </section>
+
+        <section class="unit">
+
+          <h4>Unit 5</h4>
+
+          <div class="course-links">
+
+            <h5>Overview of Courses and What I Learned</h5>
+
+            <ul>
+
+              <li>
+                <p>Udacity Course: <a href="https://www.udacity.com/wiki/ud110" target="_blank">Intro to AJAX</a></p>
+                <p>As a small demonstration of use of AJAX technics, a "Moving Homes Companion":<br>
+                  <a href="./p5/home-moving-companion.html">https://prather-mcs.github.io/p5/home-moving-companion.html</a></p>
+              </li>
+
+              <li>
+                <p>Udacity Course: <a href="https://www.udacity.com/wiki/ud989" target="_blank">JavaScript Design Patterns</a></p>
+                <p>As a demonstration of use of JavaScript M-V-* frameworks, a "Cat Clicker":<br>
+                  <a href="./p5/cat-clicker.html">https://prather-mcs.github.io/p5/cat-clicker.html</a></p>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="final-project">
+
+            <h5>Final Project</h5>
+
+            <p>in progress</p>
+
+          </div>
+
+
+
+        </section>
+
+
+        <section class="unit">
+
+          <h4>Unit 4</h4>
+
+          <div class="course-links">
+
+            <h5>Overview of Courses and What I Learned</h5>
+
+            <ul>
+
+              <li>
+                <p>Udacity Course: <a href="https://www.udacity.com/wiki/ud884" target="_blank">Web Performance Optimization</a></p>
+                <p>This course was taught by <a href="" target="_blank">Ilya Grigorik</a>. He really impressed me. He now works for Google as a Developer Advocate, having built up a lot of experience with the network technology behind the internet. He even wrote an O'Reilly book on High-Performance Browser Networking. His blog archives are always great for web developers to read when they have time to go deep on technical issues, and his Twitter feed is always tells you what he considers to be the latest good information on such issues.</p>
+                <p>This course showed us an excellent <a href="https://developers.google.com/web/fundamentals/" target="_blank">learning portal for web developers</a> built by Google. It has many hours of content to learn from, surveying very many best practices for developers.</p>
+                <p>Thanks to this course, I am now also fluent with the vendor documentation for "Dev Tools" utilities both <a href="https://developer.chrome.com/devtools" target="_blank">in Chrome</a> and <a href="https://developer.mozilla.org/en-US/docs/Tools" target="_blank">in Firefox</a>.</p>
+                <p>Finally, this course also introduced us to the <a href="https://developers.google.com/speed/pagespeed" target="_blank">PageSpeed Insights tool</a>, which runs a battery of automated test on any page you are developing to help you make sure you aren't inadvertently and needlessly creating networking bottlenecks for delivering pages to users. This is especially of concern for mobile-friendly development.</p>
+              </li>
+
+              <li>
+                <p><a href="https://www.udacity.com/wiki/ud860" target="_blank">Browser Rendering Optimization</a></p>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="final-project">
+
+            <h5>Final Project</h5>
+
+            <p>The final project for this course required us to make important changes to a multi-page site to bring its PageSpeed Insights score (PSI is described above) from 30 to almost 100, while still preserving the original appearance of the site.</p>
+            <p>To accomplish this, I had make optimizations to (a) delivery of webfonts, (b) delivery of images, (c) delivery and sync/async behavior of JavaScript files, and (d) delivery of CSS style rules. Finally, I also re-wrote the JavaScript animation-control routines on the "pizzeria" page, to change it from <a href="http://prather-mcs.github.io/p0/views/pizza.html" target="_blank">being extrely janky</a> to <a href="http://prather-mcs.github.io/p4/views/pizza.html" target="_blank">extremely fluid</a> at 60 fps animation rate. Animation there occurred while you scroll the page and stops when you stop scrolling. The weaker your computer's graphics and CPU resources, the greater the difference you will notice due to my changes.</p>
+              <ul>
+                <li>See the original, un-optimized version:<br>
+                  <a href="https://prather-mcs.github.io/udacity-units/unit-4/final-before">https://prather-mcs.github.io/udacity-units/unit-4/final-before</a>
+                </li>
+                <li>See the same page after it has been fully optimized:<br>
+                  <a href="https://prather-mcs.github.io/udacity-units/unit-4/final-after">https://prather-mcs.github.io/udacity-units/unit-4/final-after</a>
+                </li>
+              </ul>
+            </p>
+
+          </div>
+
+        </section>
+
+
+        <section class="unit">
+
+          <h4>Unit 3</h4>
+
+          <div class="course-links">
+
+            <h5>Overview of Courses and What I Learned</h5>
+
+            <ul>
+
+              <li>
+                <p>Udacity Course: <a href="https://www.udacity.com/wiki/ud015" target="_blank">Object-Oriented JavaScript</a></p>
+                <p>abcd</p>
+                <p>abcd</p>
+              </li>
+
+              <li>
+                <p>Udacity Course: <a href="https://www.udacity.com/wiki/ud292" target="_blank">HTML5 Canvas</a></p>
+                <p>abcd</p>
+                <p>abcd</p>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="final-project">
+
+            <h5>Final Project</h5>
+
+            <p>I wrote the object-oriented JavaScript to make this re-make of the classic arcade game "Frogger" work:
+              <ul>
+                <li>Play it now:<br>
+                  <a href="http://prather-mcs.github.io/p3">http://prather-mcs.github.io/p3</a>
+                </li>
+              </ul>
+            </p>
+
+          </div>
+
+        </section>
+
+
+        <section class="unit">
+
+          <h4>Unit 2</h4>
+
+          <div class="course-links">
+
+            <h5>Overview of Courses and What I Learned</h5>
+
+            <ul>
+
+              <li>
+                <p>Udacity Course: <a href="https://www.udacity.com/wiki/ud804" target="_blank">JavaScript Basics</a></p>
+                <p>abcd</p>
+                <p>abcd</p>
+              </li>
+
+              <li>
+                <p>Udacity Course: <a href="https://www.udacity.com/wiki/ud245" target="_blank">Intro to jQuery</a></p>
+                <p>abcd</p>
+                <p>abcd</p>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="final-project">
+
+            <h5>Final Project</h5>
+
+            <p>abcd</p>
+            <p>abcd</p>
+
+          </div>
+
+        </section>
+
+
+        <section class="unit">
+
+          <h4>Unit 1</h4>
+
+          <div class="course-links">
+
+            <h5>Overview of Courses and What I Learned</h5>
+
+            <ul>
+
+              <li>
+                <p>Udacity Course: <a href="https://www.udacity.com/wiki/ud304" target="_blank">Intro to HTML and CSS</a></p>
+                <p>abcd</p>
+                <p>abcd</p>
+              </li>
+
+              <li>
+                <p>Udacity Course: <a href="https://www.udacity.com/wiki/ud893" target="_blank">Responsive Web Design</a></p>
+                <p>abcd</p>
+                <p>abcd</p>
+              </li>
+
+              <li>
+                <p>Udacity Course: <a href="https://www.udacity.com/wiki/ud882" target="_blank">Responsive Images</a></p>
+                <p>abcd</p>
+                <p>abcd</p>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="final-project">
+
+            <h5>Final Project</h5>
+
+            <p>abcd</p>
+            <p>abcd</p>
+
+          </div>
+
+        </section>
+
+      </section>
+
+      <section class="major">
+
+        <h3>Section 1b: Completed Udacity Courses</h3>
+
+          <ul>
+            <li><a href="https://www.udacity.com/wiki/cs046" target="_blank">Introduction to Programming in Java</a>: object-oriented programming principles with Java</li>
+            <li><a href="https://www.udacity.com/wiki/cs101" target="_blank">Intro to Computer Science</a>: built toy search engine with Python</li>
+            <li><a href="https://www.udacity.com/wiki/ud036" target="_blank">Programming Foundations with Python</a>: object-oriented programming principles with Python</li>
+            <li><a href="https://www.udacity.com/wiki/cs262" target="_blank">Programming Languages</a>: built JavaScript interpreter in Python; starting with principles of Computer Science and Finite State Machines</li>
+            <li><a href="https://www.udacity.com/wiki/cs253" target="_blank">Web Development</a>: built running "wiki" webapp in Python with Google AppEngine cloud services</li>
+            <li><a href="https://www.udacity.com/wiki/st101" target="_blank">Intro to Statistics</a>: refreshed my fluency in statistics, which I orginally learned in college</li>
+            <li><a href="https://www.udacity.com/wiki/st095" target="_blank">Statistics</a>: further and more deeply practiced statistical analysis</li>
+            <li><a href="https://www.udacity.com/wiki/ud359" target="_blank">Intro to Data Science</a>: computing key statistics with the Python library "Pandas"</li>
+            <li><a href="https://www.udacity.com/wiki/ud651" target="_blank">Data Analysis with R</a>: computing more key statistics with the R language</li>
+            <li><a href="broken" target="_blank">template</a>: copy-paste</li>
+
+
+          </ul>
+
+      </section>
+
+    </section>
+
+
+    <section>
+
+      <!-- real-world work -->
+      <h2>Section 2: My Work In The Real World</h2>
+      <p>{{brought local non-profit web-page up-to-date}}</p>
+      <p>{{contributed minor improvement to Addy Osmani's online JavaScript book}}</p>
+
+    </section>
+
+
+
+  </main>
+
+
 
 
 </body>

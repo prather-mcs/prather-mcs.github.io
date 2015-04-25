@@ -1,0 +1,81 @@
+<!doctype html>
+
+
+
+<html lang="en">
+
+
+<head>
+
+  <title>Cat Clicker</title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--link rel="icon" type="image/x-icon" href=".ico">
+  <link rel="stylesheet" href=".css"-->
+
+  <style>
+
+    * {box-sizing: border-box;}
+
+    p {margin: 0;}
+
+    body {
+      max-width: 800px; height: 800px; margin: 0 auto;
+      font: 20px /1 Arial, sans-serif; text-align: center;
+    }
+
+    #left-panel {width: 700px; float: left;}
+    #cat-display {max-width: 600px; margin: 0 auto; padding: 50px 0 175px 0;}
+    #cat-display .cat-name {padding: 8px 0;}
+    #cat-display .cat-image {display:block; max-width: 400px; margin: 0 auto;}
+    #cat-display .click-counter {padding: 8px 0;}
+
+    #right-panel {width: 100px; float: left;}
+    #right-panel .cat-selector {
+      max-width: 120px; height: 110px; padding-top: 45px;
+      border: 1px solid black;
+    }
+
+  </style>
+
+  <script src="./js/cat-clicker-v4.js"></script>
+
+</head>
+
+
+
+<body>
+
+  <div id="left-panel">
+
+    <div id="cat-display">
+
+      <p class="cat-name">JavaScript Is Required To Use Cat Clicker.</p>
+      <img class="cat-image" src="./img/cats.jpg" alt="This is a cat you can click on.">
+      <p class="click-counter">Please enable JavaScript.</p>
+
+    </div>
+
+  </div>
+
+  <div id ="right-panel">
+
+    <p id="timmy" class="cat-selector">Timmy</p>
+
+    <p id="tommy" class="cat-selector">Tommy</p>
+
+    <p id="joey" class="cat-selector">Joey</p>
+
+    <p id="robby" class="cat-selector">Robby</p>
+
+    <p id="johnny" class="cat-selector">Johnny</p>
+
+  </div>
+
+</body>
+
+
+</html>

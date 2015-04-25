@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../font/OpenSans-Regular.ttf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', 'Arial',sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+.row {
+  width: 100%;
+}
+
+.row:after {
+  content: " ";
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+  display: table;
+  clear: both;
+}
+
+
+.col-1, .col-2, .col-3, .col-4,
+.col-5, .col-6, .col-7, .col-8,
+.col-9, .col-10, .col-11, .col-12 {
+  float: left;
+}
+
+.col-5 { width: 41.66%; }
+.col-7 { width: 58.3%; }
+
+
+.textual {
+  padding: 0 2em;
+}

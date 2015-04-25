@@ -1,0 +1,115 @@
+<!doctype html>
+
+
+
+<html lang="en">
+
+
+<head>
+
+  <title>Cat Clicker</title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--link rel="icon" type="image/x-icon" href=".ico">
+  <link rel="stylesheet" href=".css"-->
+
+  <style>
+
+  * {box-sizing: border-box;}
+
+  p {margin: 0;}
+
+  body {
+    max-width: 800px; height: 800px; margin: 0 auto;
+    font: 20px /1 Arial, sans-serif; text-align: center;
+  }
+
+  #left-panel {width: 700px; float: left;}
+  #cat-display {max-width: 600px; height: 550px; margin: 0 auto; padding-top: 20px;}
+  #cat-display .cat-name {padding: 8px 0;}
+  #cat-display .cat-image {display:block; max-width: 400px; margin: 0 auto;}
+  #cat-display .click-counter {padding: 8px 0;}
+
+  #right-panel {width: 100px; float: left; margin-top: 10px;}
+  #right-panel .cat-selector {
+    max-width: 120px; height: 100px; padding-top: 40px;
+    border: 1px solid black; border-top: none;
+  }
+  #right-panel .cat-selector:first-of-type {border: 1px solid black;}
+
+
+  #admin-button {
+    margin: 0 auto; max-width: 100px; padding: 20px 6px;
+    border: 1px dashed black; font: 16px /1 monospace;
+  }
+
+  #admin-div {
+    margin: 0 auto; max-width: 400px; border: 1px dashed black; display: none;
+    padding: 15px; font: 12px /1 monospace;
+  }
+  #admin-controls {margin: 0 auto; display: table; font-size: 15px;}
+  #admin-controls div {display: table-row; margin: 20px 0;}
+  #admin-controls span {display: table-cell; text-align: right;}
+  #admin-controls input {display: table-cell; margin-left: 15px;}
+  #admin-confirm {margin-top: 10px;}
+  #admin-confirm button {padding: 5px 10px;}
+
+</style>
+
+<script src="./js/cat-clicker-v5.js"></script>
+
+</head>
+
+
+
+<body>
+
+  <div id="left-panel">
+
+    <div id="cat-display">
+
+      <p class="cat-name">JavaScript Is Required To Use Cat Clicker.</p>
+      <img class="cat-image" src="./img/cats.jpg" alt="This is a cat you can click on.">
+      <p class="click-counter">Please enable JavaScript.</p>
+
+    </div>
+
+    <div id="admin-button">
+      Open Admin Mode
+    </div>
+
+    <div id="admin-div">
+      <div id="admin-controls">
+        <div><span>name:</span><input id="input-name" type="text" /></div>
+        <div><span>image (URL):</span><input id="input-image" type="text" /></div>
+        <div><span>clicks:</span><input id="input-clicks" type="text" /></div>
+      </div>
+
+      <div id="admin-confirm">
+        <button id="save-button">save</button><button id="cancel-button">close without saving</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div id ="right-panel">
+
+    <p id="Timmy" class="cat-selector">Timmy</p>
+
+    <p id="Tommy" class="cat-selector">Tommy</p>
+
+    <p id="Joey" class="cat-selector">Joey</p>
+
+    <p id="Robby" class="cat-selector">Robby</p>
+
+    <p id="Johnny" class="cat-selector">Johnny</p>
+
+  </div>
+
+</body>
+
+
+</html>
