@@ -259,7 +259,7 @@
               </li>
 
               <li>
-                <p><a href="https://www.udacity.com/wiki/ud860" target="_blank">Browser Rendering Optimization</a></p>
+                <p>Udacity Course: <a href="https://www.udacity.com/wiki/ud860" target="_blank">Browser Rendering Optimization</a></p>
               </li>
 
             </ul>
@@ -268,22 +268,26 @@
 
           <div class="final-project">
 
-            <h5>Final Project: Unit 4</h5>
+            <h5>Final Project, Unit 4</h5>
 
-            <p>GitHub repository for project code:<br><a href="https://github.com/prather-mcs/nano/tree/master/project-4" target="_blank">https://github.com/prather-mcs/nano/tree/master/project-4</a></p>
+            <p>Version control repository for project code:<br><a href="https://github.com/prather-mcs/nano/tree/master/project-4" target="_blank">https://github.com/prather-mcs/nano/tree/master/project-4</a></p>
 
-            <p>The final project for this course required us to make important changes to a multi-page site to bring its PageSpeed Insights score (PSI is described above under "...What I Learned") from 30 to almost 100, while still perfectly preserving the original appearance and functionality of the site.</p>
+            <p>The final project for this unit required us to make important changes to a multi-page site to bring its PageSpeed Insights score (PSI was described above under "...What I Learned") from 30 to almost 100, while still perfectly preserving the original appearance and functionality of the site.</p>
 
-            <p>To accomplish this, I had make optimizations to (a) delivery of webfonts, (b) delivery of images, (c) delivery and sync/async behavior of JavaScript files, and (d) delivery of CSS style rules. Finally, I also re-wrote the JavaScript animation routines on the "pizzeria" page, to change it from <a href="http://prather-mcs.github.io/udacity-units/unit-4/initial-state/views/pizza.html" target="_blank">being extremely janky</a> to <a href="http://prather-mcs.github.io/udacity-units/unit-4/final-state/views/pizza.html" target="_blank">perfectly fluid</a> at 60 fps animation rate. Animation there occurred while you scroll the page and stops when you stop scrolling. The weaker your computer's graphics and CPU resources, the greater the difference you will notice due to my changes.</p>
-              <ul>
-                <li>See the original, un-optimized version:<br>
-                  <a href="https://prather-mcs.github.io/udacity-units/unit-4/initial-state" target="_blank">https://prather-mcs.github.io/udacity-units/unit-4/initial-state</a>
-                </li>
-                <li>See the same page after it has been fully optimized:<br>
-                  <a href="https://prather-mcs.github.io/udacity-units/unit-4/final-state" target="_blank">https://prather-mcs.github.io/udacity-units/unit-4/final-state</a>
-                </li>
-              </ul>
-            </p>
+            <ul>
+              <li>See the original, un-optimized version:<br>
+                <a href="https://prather-mcs.github.io/udacity-units/unit-4/initial-state" target="_blank">https://prather-mcs.github.io/udacity-units/unit-4/initial-state</a>
+              </li>
+              <li>See the same page after it has been fully optimized:<br>
+                <a href="https://prather-mcs.github.io/udacity-units/unit-4/final-state" target="_blank">https://prather-mcs.github.io/udacity-units/unit-4/final-state</a>
+              </li>
+            </ul>
+
+            <p>To accomplish this, I had make optimizations to (a) delivery of webfonts, (b) delivery of images, (c) delivery and sync/async behavior of JavaScript files, and (d) delivery of CSS style rules.</p>
+
+            <p>Furthermore, with this project, I took the opportunity to get started learning the Node runtime, for the purpose of minifying JS files. So the final state of the code on the live page contains minified JavaScript code, which was a PSI score improvement. For more practice with Node, I also minified the HTML and styling rules, although that was not measured by PSI. There is a lot more to say about Node, but for now I'll summarize it by saying that I consider it a very important toolkit which I value very much.</p>
+
+            <p>Finally, I also re-wrote the JavaScript animation routines on the "pizzeria" page, to change it from <a href="./img/pizza-animation-initial-state.jpg" target="_blank">being extremely janky</a> to <a href="./img/pizza-animation-final-state.jpg" target="_blank">perfectly fluid</a> at 60 fps animation rate. Animation there occurred while you scroll the page and stops when you stop scrolling. The weaker your computer's graphics and CPU resources, the greater the difference you will notice due to my changes. (The linked images can be summarized by saying that I greatly reduced the amount of time spent executing scripts and re-painting the webpage, down from over 50 milliseconds per animation event to single-digit millisecond animations.)</p>
 
           </div>
 
@@ -292,7 +296,7 @@
 
         <section class="unit">
 
-          <h4>Unit 3: Prototypal JavaScript</h4>
+          <h4>Unit 3: Prototypal Inheritance in JavaScript</h4>
 
           <div class="course-links">
 
@@ -302,14 +306,16 @@
 
               <li>
                 <p>Udacity Course: <a href="https://www.udacity.com/wiki/ud015" target="_blank">Object-Oriented JavaScript</a></p>
-                <p>abcd</p>
-                <p>abcd</p>
+                <p>This course was taught by <a href="https://www.linkedin.com/in/marcusphillips" target="_blank">Marcus Philips</a>, CTO and Dean of Instruction at <a href="http://www.hackreactor.com" target="_blank">Hack Reactor</a>. He brought us right up-to-date on the basic best practices for accomplishing Object-Oriented programming styles in JavaScript.</p>
+                <p>So we learned how to correctly use <code>Object.prototype</code> and <code>Object.create</code>, the <code>this</code> operator and the <code>new</code> operator, and about the uses and pitfalls of closures.</p>
+                <p>I'm proud to say that these concepts, which would doom any developer who does not understand them accurately, are now "no problem" for me.</p>
               </li>
 
               <li>
                 <p>Udacity Course: <a href="https://www.udacity.com/wiki/ud292" target="_blank">HTML5 Canvas</a></p>
-                <p>abcd</p>
-                <p>abcd</p>
+                <p>Because the final project of this unit used the HTML <code>&lt;canvas&gt;</code> element as the foundation for rendering game animation, there was a course on the present state of the Canvas API, implemented by browser vendors.</p>
+                <p>A mini-project during this course involved using JavaScript to allow page visitors to add arbitrary text to certain images, to thus allow the user to make "meme pics". The course left this Meme Maker App at a stage of development premature for deployment.</p>
+                <p>However, (coming soon!) I will develop this Meme Maker App to a point viable for live deployment, and link to it here.</p>
               </li>
 
             </ul>
@@ -318,15 +324,36 @@
 
           <div class="final-project">
 
-            <h5>Final Project</h5>
+            <h5>Final Project, Unit 3</h5>
+
+            <p>Version control repository for project code:<br><a href="https://github.com/prather-mcs/nano/tree/master/project-3" target="_blank">https://github.com/prather-mcs/nano/tree/master/project-3</a></p>
 
             <p>I wrote the object-oriented JavaScript to make this re-make of the classic arcade game "Frogger" work:
               <ul>
                 <li>Play it now:<br>
-                  <a href="http://prather-mcs.github.io/p3">http://prather-mcs.github.io/p3</a>
+                  <a href="http://prather-mcs.github.io/udacity-units/unit-3/index.html">http://prather-mcs.github.io/udacity-units/unit-3/index.html</a>
                 </li>
               </ul>
             </p>
+
+            <p>Of course at this stage of the Nanodegree program, we were not required to write the whole game from scratch, nor to create our own image assets. All images were provided for us, and the code that powers the game was partially done as well.</p>
+
+            <p>The base code would only draw a blank screen, so we had to make decisions like "how big should the road be" and write code to draw the road on the canvas. Then we had to figure out how to draw the moving obstacles (cars, bugs) at an appropriate speed moving from left to right. Then we had to figure out how to have a player sprite which accepted player inputs and would move accordingly. Collision detection was also completely up to us to implement. And in creating our solutions for these design specifications, we had to use both JavaScript's prototypal inheritance and its function closure rules correctly, to come up with an efficent "object-oriented" implementation for the game engine.</p>
+
+            <p>My final game, as linked above, implements only two gameplay features beyond the basic requirements. I allowed pausing the game with a button press, and I implemented collision detection on the cars themselves, such that they would bump into each other, and not be able to pass through slower cars in front of them. I definitely had some great ideas of improvements to make, to make the game actually fun to play, but I noticed several other students do it first:</p>
+
+            <ul>
+              <li><a href="http://alexandrk.github.io/frontend-nanodegree-arcade-game" target="_blank">http://alexandrk.github.io/frontend-nanodegree-arcade-game</a></li>
+              <li><a href="http://arcadegame2000.appspot.com" target="_blank">http://arcadegame2000.appspot.com</a></li>
+              <li><a href="http://rachkoud.github.io/frontend-nanodegree-arcade-game/index.html" target="_blank">http://rachkoud.github.io/frontend-nanodegree-arcade-game/index.html</a></li>
+              <li><a href="http://anjalinanda.github.io/FroggerGame" target="_blank">http://anjalinanda.github.io/FroggerGame/</a></li>
+            </ul>
+
+            <p>So I decided to not spend the significant amount of extra time it would take to make a truly fun game, and make it playable on mobile devices, which it really needs to be. My playable version might not be the most impressive thing. However, the feature I implemented where cars have collision detection on themselves and cannot pass through each other is something not one of the other versions did.</p>
+
+            <p>What ought to be impressive is my code behind the game. Not only did I take the time to make it truly efficient through prototypally-inherited common functions wherever possible, but I also put in a lot of time to follow JSDoc commenting rules properly. The JSDoc comment format is as syntactical as a programming language itself, because programs parse JSDoc comments to provide static analysis and automatic documentation. So my code comments here are another programming achievement.</p>
+
+            <p>On the other hand, I now know more about how code is really organized in real-world projects, and there are some shortcomings in this code. I'm talking about the use of global variables and three separate <code>.js files sharing variables. That was basically given to us in that way, with nothing said about changing it or it needing to be changed. I would always want to build code in the modular design pattern (used with <code>require</code> or <code>import</code>), and not rely on global variables external to a script. Or internal to a script, for that matter. I know how to remove global variables altogether. So when I say I'm proud of my code, I just mean that I made it neat and efficient within the framework given to me, even if it's not a realistic framework. Also, using JSDoc should be recognized as a plus.</p>
 
           </div>
 
@@ -336,6 +363,8 @@
         <section class="unit">
 
           <h4>Unit 2: Basic JavaScript</h4>
+
+          <p>Version control repository for project code:</p>
 
           <div class="course-links">
 
@@ -406,6 +435,8 @@
           <div class="final-project">
 
             <h5>Final Project</h5>
+
+            <p>Version control repository for project code:</p>
 
             <p>abcd</p>
             <p>abcd</p>
