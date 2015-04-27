@@ -12,149 +12,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!--link rel="icon" type="image/x-icon" href=".ico"-->
-  <!--link rel="stylesheet" href=".css"-->
-
-  <style>
-
-    @font-face {
-      /* latin normal */
-      font-family: 'Open Sans';
-      font-style: normal;
-      font-weight: 400;
-      src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    }
-
-    @font-face {
-      /* latin bold */
-      font-family: 'Open Sans';
-      font-style: normal;
-      font-weight: 700;
-      src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    }
-
-    @font-face {
-      /* latin italic */
-      font-family: 'Open Sans';
-      font-style: italic;
-      font-weight: 400;
-      src: local('Open Sans Italic'), local('OpenSans-Italic'), url(https://fonts.gstatic.com/s/opensans/v10/xjAJXh38I15wypJXxuGMBo4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    }
-
-    @font-face {
-      /* latin bold and italic */
-      font-family: 'Open Sans';
-      font-style: italic;
-      font-weight: 700;
-      src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(https://fonts.gstatic.com/s/opensans/v10/PRmiXeptR36kaC0GEAetxolIZu-HDpmDIZMigmsroc4.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body, h1, h2, h3, h4, h5, p, ul {
-      margin: 0;
-      padding: 0;
-      font-weight: normal;
-    }
-
-    body {
-      background-color: #999;
-    }
-
-    main {
-      font: 16px "Open Sans", "Arial", sans-serif;
-      max-width: 800px;
-      background-color: #fff;
-      margin: 0 auto;
-      margin-top: 16px;
-      padding: 10px 18px;
-      border: 1px solid black;
-      border-radius: 20px;
-    }
-
-    h1 {
-      font-size: 36px;
-      font-weight: normal;
-    }
-
-    h2 {
-      font-size: 30px;
-    }
-
-    h3 {
-      font-size: 24px;
-      margin-left: -20px;
-    }
-
-    h4 {
-      font-size: 24px;
-      margin-bottom: 12px;
-    }
-
-    h5 {
-      font-size: 16px;
-      margin-bottom: 12px;
-    }
-
-    p {
-      /*line-height: 2em;*/
-    }
-
-    p + p {
-      margin-top: 1em;
-    }
-
-    header a {
-      text-decoration: none;
-      color: blue;
-      border-bottom: 1px dashed blue;
-    }
-
-    ul {
-      padding: 10px 20px;
-    }
-
-    li {
-
-    }
-
-    li + li {
-      margin-top: 8px;
-    }
-
-    .major {
-      margin-top: 20px;
-      padding-left: 20px;
-    }
-
-    .unit {
-      border-radius: 8px;
-      padding: 10px 20px;
-      background-color: #ccc;
-    }
-
-    .unit + .unit {
-      margin-top: 20px;
-    }
-
-    .course-links, .final-project {
-      border-radius: 8px;
-      margin-bottom: 12px;
-      padding: 16px;
-      background-color: #fff;
-      font-size: 15px;
-    }
-
-    .final-project {
-    }
-
-  </style>
+  <link rel="icon" type="image/x-icon" href="./favicon-octocat.ico">
+  <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
@@ -252,7 +111,7 @@
 
               <li>
                 <p>Udacity Course: <a href="https://www.udacity.com/wiki/ud884" target="_blank">Web Performance Optimization</a></p>
-                <p>This course was taught by <a href="https://www.igvita.com" target="_blank">Ilya Grigorik</a>. He really impressed me. He now works for Google as a Developer Advocate, having built up a lot of experience with the network technology behind the internet. He even wrote an O'Reilly book on High-Performance Browser Networking. His blog archives are always great for web developers to read when they have time to go deep on technical issues, and his Twitter feed is always tells you what he considers to be the latest good information on such issues.</p>
+                <p>This course was taught by <a href="https://www.igvita.com" target="_blank">Ilya Grigorik</a>. He really impressed me. He now works for Google as a Developer Advocate, specifically advocating best practices for fast performance on HTTP networks, having built up a lot of experience with the network technology behind the internet. He even wrote an O'Reilly book on High-Performance Browser Networking. His blog archives are always great for web developers to read when they have time to go deep on technical issues, and his Twitter feed is always tells you what he considers to be the latest good information on such issues.</p>
                 <p>This course showed us an excellent <a href="https://developers.google.com/web/fundamentals" target="_blank">learning portal for web developers</a> built by Google. It has many hours of content to learn from, surveying very many best practices for developers.</p>
                 <p>Thanks to this course, I am now also fluent with the vendor documentation for "Dev Tools" utilities both <a href="https://developer.chrome.com/devtools" target="_blank">in Chrome</a> and <a href="https://developer.mozilla.org/en-US/docs/Tools" target="_blank">in Firefox</a>.</p>
                 <p>Finally, this course also introduced us to the <a href="https://developers.google.com/speed/pagespeed" target="_blank">PageSpeed Insights tool</a>, which runs a battery of automated test on any page you are developing to help you make sure you aren't inadvertently and needlessly creating networking bottlenecks for delivering pages to users. This is especially of concern for mobile-friendly development.</p>
@@ -353,7 +212,7 @@
 
             <p>What ought to be impressive is my code behind the game. Not only did I take the time to make it truly efficient through prototypally-inherited common functions wherever possible, but I also put in a lot of time to follow JSDoc commenting rules properly. The JSDoc comment format is as syntactical as a programming language itself, because programs parse JSDoc comments to provide static analysis and automatic documentation. So my code comments here are another programming achievement.</p>
 
-            <p>On the other hand, I now know more about how code is really organized in real-world projects, and there are some shortcomings in this code. I'm talking about the use of global variables and three separate <code>.js files sharing variables. That was basically given to us in that way, with nothing said about changing it or it needing to be changed. I would always want to build code in the modular design pattern (used with <code>require</code> or <code>import</code>), and not rely on global variables external to a script. Or internal to a script, for that matter. I know how to remove global variables altogether. So when I say I'm proud of my code, I just mean that I made it neat and efficient within the framework given to me, even if it's not a realistic framework. Also, using JSDoc should be recognized as a plus.</p>
+            <p>On the other hand, I now know more about how code is really organized in real-world projects, and there are some shortcomings in this code. I'm talking about the use of global variables, shared by three three separate <code>.js</code> script files. That was basically given to us in that way, with nothing said about changing it or it needing to be changed. I would always want to build code in the modular design pattern (used with <code>require</code> or <code>import</code>), and not rely on global variables external to a script. Or internal to a script, for that matter. I know how to remove global variables altogether. So when I say I'm proud of my code, I just mean that I made it neat and efficient within the framework given to me, even if it's not a realistic framework. Also, using JSDoc should be recognized as a plus.</p>
 
           </div>
 
