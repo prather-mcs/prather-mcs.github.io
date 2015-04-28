@@ -1,0 +1,82 @@
+/* resets */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, cite,
+code, em, img, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, form, table,
+caption, tbody, tfoot, thead, tr, th, td, aside, footer, header, menu, nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  font: normal normal 400 normal 18px/1 'Roboto';
+  font-family: 'Roboto', sans-serif;
+  max-width: 948px;
+  color: #666756;
+  padding-top: 36px;
+}
+
+.biwh {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.biwh2 {
+  padding-left: 6px;
+}
+
+.biwh3 {
+  padding-right: 6px;
+}
+
+.biwh4 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+header {
+  padding-bottom: 14px;
+  border-bottom: 4px solid #bcbbbb;
+}
+
+.center-theme {
+  margin-top: 30px;
+  margin-bottom: 38px;
+}
+
+main {
+  padding-bottom: 160px;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 60px;
+  padding-top: 10px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 22px;
+  padding-top: 10px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 32px;
+  color: #bcbbbb;
+  padding: 0 0 16px 10px;
+}
+
+.project-title {
+  font-weight: 400;
+  font-size: 36px;
+  color: #666756;
+  padding: 14px 0;
+}
+
+.project-url {
+  font-size: 16px;
+}
