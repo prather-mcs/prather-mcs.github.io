@@ -1,8 +1,3 @@
-/* global */
-/* eslint-env: browser */
-/* eslint strict: 0, quotes: 0, no-use-before-define: [2, "nofunc"],
-   no-unused-vars: 0, no-undef: 0, dot-notation: 0, curly: 0 */
-
 var bioData, workData, projectsData, educationData;
 
 bioData = {
@@ -18,7 +13,7 @@ bioData = {
   },
 
   picture: './img/fry.jpg',
-  welcomeMessage: 'lorem ipsum dolor sit amet. . . .',
+  welcomeMessage: 'Welcome text. Or perhaps a tagline. . . .',
 
   skills: [
     'awesomeness',

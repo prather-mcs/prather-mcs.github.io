@@ -1,9 +1,3 @@
-/* global google */
-/* eslint-env: browser */
-/* eslint strict: 0, quotes: 0, no-use-before-define: [2, "nofunc"],
-   no-unused-vars: 0, no-undef: 0 */
-
-
 var HTMLheaderName = '<h1 id="name">%data%</h1>',
   HTMLheaderRole = '<span>%data%</span><hr/>',
 
