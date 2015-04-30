@@ -124,10 +124,10 @@ function initializeMap() {
     var lat, lon, name, bounds, marker;
 
     // The next lines save location data from the search result object to local variables
-    lat = placeData.geometry.location.k;  // latitude from the place service
-    lon = placeData.geometry.location.D;  // longitude from the place service
-    name = placeData.formatted_address;   // name of the place from the place service
-    bounds = window.mapBounds;            // current boundaries of the map window
+    lat = placeData.geometry.location.lat();  // latitude from the place service
+    lon = placeData.geometry.location.lng();  // longitude from the place service
+    name = placeData.formatted_address;       // name of the place from the place service
+    bounds = window.mapBounds;                // current boundaries of the map window
 
     // marker is an object with additional data about the pin for a single location
     marker = new google.maps.Marker({
