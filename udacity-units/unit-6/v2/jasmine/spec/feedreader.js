@@ -5,8 +5,8 @@
  */
 
 
- // Use jQuery to execute feedReaderTests only after browser ready event.
- $(feedReaderTests);
+// Use jQuery to execute feedReaderTests only after browser ready event.
+$(feedReaderTests);
 
 
 
@@ -40,11 +40,11 @@ function feedReaderTests() {
 
     // Each Feed data Object should have a valid and non-empty URL property.
     it('-each have non-empty strings for a URL', function() {
-     feeds.forEach(function(feed) {
-       expect(feed.url).toBeDefined();
-       expect(typeof feed.url).toBe('string');
-       expect(feed.url.length).not.toBe(0);
-     });
+      feeds.forEach(function(feed) {
+        expect(feed.url).toBeDefined();
+        expect(typeof feed.url).toBe('string');
+        expect(feed.url.length).not.toBe(0);
+      });
     });
 
 
@@ -98,17 +98,17 @@ function feedReaderTests() {
 
     // The menu must be initially hidden.
     it('-is hidden by default', function() {
-     expect($body.hasClass('menu-hidden')).toBe(true);
+      expect($body.hasClass('menu-hidden')).toBe(true);
     });
 
 
     // The .menu-hidden class must be toggled when the menu icon is clicked.
     it('-toggles "hidden" class when clicked', function() {
-     $menuIconLink.trigger('click');
-     expect($body.hasClass('menu-hidden')).toBe(false);
+      $menuIconLink.trigger('click');
+      expect($body.hasClass('menu-hidden')).toBe(false);
 
-     $menuIconLink.trigger('click');
-     expect($body.hasClass('menu-hidden')).toBe(true);
+      $menuIconLink.trigger('click');
+      expect($body.hasClass('menu-hidden')).toBe(true);
     });
 
 
@@ -181,14 +181,15 @@ function feedReaderTests() {
 
           // This should resolve to a string containing the entire html content
           // of the feed section:
-          previousContent = $('.feed').html();
+          newContent = $('.feed').html();
 
           // Should resolve to something like "Udacity Blog":
-          previousFeedTitle = $('.header-title').text();
+          newFeedTitle = $('.header-title').text();
 
           // Should resolve to something like "http://blog.udacity.com/abcdefg":
-          previousFeedLink = $('.feed .entry-link')[0].href;
+          newFeedLink = $('.feed .entry-link')[0].href;
 
+          previousContent = true;
         }
 
         else {
@@ -220,6 +221,18 @@ function feedReaderTests() {
           // ought to change it, I'm using three pairs of comparisons. Therefore
           // this test spec will be likely to hit a false-positive some day.
           // However, we can deal with that situation when it arises.
+          //
+          // Another potential fault of this implementation of the spec is that
+          // if identical feed URLs ever get placed in the allFeeds Array, this
+          // spec should (but might not!) fail. It might not fail if the
+          // asynchronous results of loadFeed for the identical URLs come back
+          // at far-enough intervals that a different feed has loaded in
+          // between. But even if this test merely compares "current" and "new"
+          // loadFeed() results, when it could more robustly compare new results
+          // against every previous result in a cache of all previous results, I
+          // say it is good enough for the purpose of checking that loadFeed
+          // does get new results for each feed loaded. In any case, the app is
+          // not in error if it gets identical results for identical URLs.
           if (previousContent === newContent ||
             previousFeedTitle === newFeedTitle ||
             previousFeedLink === newFeedLink) {

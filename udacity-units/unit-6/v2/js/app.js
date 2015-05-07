@@ -72,8 +72,8 @@ function loadFeed(id, cb) {
     feedName = window.allFeeds[id].name,
     feed = new google.feeds.Feed(feedUrl);
 
-   // Load the feed using the Google Feed Reader API.
-   // Once the feed has been loaded, the callback function is executed.
+  // Load the feed using the Google Feed Reader API.
+  // Once the feed has been loaded, the callback function is executed.
   feed.load(feedLoadHandler);
 
   function feedLoadHandler(result) {
