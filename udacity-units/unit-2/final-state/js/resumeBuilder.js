@@ -92,8 +92,8 @@ function displayBio(bio) {
     contacts = bio['contacts'],
     mobile = HTMLmobile.replace('%data%', contacts['mobile']),
     email = HTMLemail.replace('%data%', contacts['email']),
-    github = HTMLgithub.replace(/%data%/g, contacts['github']),
-    twitter = HTMLtwitter.replace(/%data%/g, contacts['twitter']),
+    github = HTMLgithub.replace('%data%', contacts['github']),
+    twitter = HTMLtwitter.replace('%data%', contacts['twitter']),
     location = HTMLlocation.replace('%data%', contacts['location']),
     index;
 
@@ -111,13 +111,12 @@ function displayBio(bio) {
 
   if (bio.skills.length > 0) {
     $('#header').append(HTMLskillsStart);
-    for (index in bio.skills) {
+    for (index = 0; index < bio.skills.length; index++) {
       $('#skills').append(HTMLskills.replace('%data%', bio['skills'][index]));
     }
   }
 
   if (contacts) {
-
     if (mobile) {
       $('#topContacts').append(mobile);
       $('#footerContacts').append(mobile);
