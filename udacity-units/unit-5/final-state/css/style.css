@@ -129,3 +129,19 @@ html, body, #map-canvas {
 .foursquare-link {
   text-align: center;
 }
+
+
+@media only screen and (max-width: 480px) {
+  #venue-list-container {
+    display: none !important;
+  }
+
+  #search-box {
+    left: 5%;
+  }
+
+  #search-box > input {
+    width: 270px;
+  }
+
+}

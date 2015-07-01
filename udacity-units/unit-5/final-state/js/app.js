@@ -1,11 +1,12 @@
-if (typeof(google) === 'undefined'
-  || typeof($) === 'undefined'
-  || typeof(ko) === 'undefined') {
+if (typeof google === 'undefined'
+  || typeof $ === 'undefined'
+  || typeof ko === 'undefined') {
   alert('We\'re sorry, but an error has occurred, which is temporarily ' +
   'preventing any usage of this app. Try again later!');
 } else {
   document.addEventListener('DOMContentLoaded', boot);
 }
+
 
 
 function boot() {
@@ -193,7 +194,7 @@ function KoViewModel(venuesJSON) {
     var infoWindowOptions = {
         content: '',
         maxWidth: 200
-    }
+    };
 
     return new google.maps.InfoWindow(infoWindowOptions);
   }
@@ -375,9 +376,7 @@ function KoViewModel(venuesJSON) {
       google.maps.event.addListener(venue.marker, 'click', venue.openInfoWindow);
       */
 
-      koVmInstance.allVenues.forEach(function(venue) {
-        koVmInstance.visibleMarkers.push(venue);
-      });
+      koVmInstance.visibleMarkers.push(venue);
     });
   }
 }
