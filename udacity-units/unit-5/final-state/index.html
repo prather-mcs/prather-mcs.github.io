@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html>
+
+
+<head>
+
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="./js/app.js"></script>
+
+</head>
+
+
+<body>
+
+  <div id="map-canvas"></div>
+
+  <div id="search-box">
+    <input type="search" placeholder="keyword search" data-bind="textInput: userSearchInput, event: {keyup: search}" autocomplete="off">
+  </div>
+
+  <div id="venue-list-container">
+
+    <button id="venue-list-toggle-button" data-bind="click: toggleMenu">All Places</button>
+
+    <ul id="venue-list" data-bind="visible: showMenu, foreach: visibleMarkers">
+      <li data-bind="text: venueName, click: openInfoWindow"></li>
+    </ul>
+
+  </div>
+
+</div>
+
+
+</body>
+
+
+</html>

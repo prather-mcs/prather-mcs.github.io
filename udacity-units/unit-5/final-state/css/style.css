@@ -1,0 +1,131 @@
+/* resets */
+html, body, div, span,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a,
+cite, code, em, img,
+strong, sub, sup,
+b, u, i,
+ol, ul, li,
+form, label,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, footer, header, hgroup,
+menu, nav, output, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+html, body, #map-canvas {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+#search-box {
+  display: block;
+  position: absolute;
+  bottom: 15px;
+  left: 35%;
+  border: 2px solid #0191c8;
+}
+
+#search-box > input {
+  font: 25px Arial, sans-serif;
+}
+
+
+
+
+#venue-list-container {
+  position: absolute;
+  top: 5%;
+  left: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 80%;
+  width: 20%;
+  font: 20px Arial, sans-serif;
+}
+
+#venue-list-toggle-button {
+  font: inherit;
+  font-weight: bold;
+  min-height: 28px;
+  background-color: #0191c8;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+}
+
+#venue-list-toggle-button.open {
+  border-radius: 8px 8px 0 0;
+}
+
+#venue-list {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  border: 1px solid #0191c8;
+  border-top: none;
+}
+
+#venue-list > li {
+  list-style: none;
+  padding: 6px 10px;
+  color: #000;
+  background-color: #fff;
+
+  /* make text unselectable */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#venue-list > li:hover {
+  cursor: pointer;
+  box-sizing: content-box;
+  border: 2px solid #0191c8;
+  border-left: 1px solid #0191c8;
+  padding: 4px 9px;
+}
+
+#venue-list > li:nth-child(even) {
+  background-color: #cfcfcf;
+}
+
+
+
+
+.venue-name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.venue-image {
+  display: block;
+}
+
+.foursquare-link {
+  text-align: center;
+}
