@@ -66,7 +66,6 @@ function fourSquareAjax(apiName, cb, venueIdNum) {
 
     default:
       cb();
-      break;
   }
 }
 
@@ -202,7 +201,7 @@ function KoViewModel(venuesJSON) {
 
   function generateVenues(fourSquareVenueData) {
   // This function is responsible for generating JavaScript objects which
-  // implement all the functionality the web app needs from the place / venues
+  // implement all the functionality the web app needs from the places / venues
   // in the neighborhood.
 
     var Venue = function(obj) {
