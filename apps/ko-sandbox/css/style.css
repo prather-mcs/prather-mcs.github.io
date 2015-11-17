@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body  {
+  background-color: #ddd;
+}
+
+main {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 18px;
+  max-width: 20em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  background-color: #fff;
+  margin-top: 4em;
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.smaller {
+  font-size: smaller;
+}
+
+.emph {
+  font-style: italic;
+}
