@@ -25,9 +25,9 @@ var pizzeriaMenuApp = {
 
     menuResults = window.performance.getEntriesByName('pizza_menu_generation');
 
-    console.log(
-      'Time to generate pizzas on load: ' + menuResults[0].duration + 'ms'
-    );
+    // console.log(
+    //   'Time to generate pizzas on load: ' + menuResults[0].duration + 'ms'
+    // );
 
 
     function pizzaElementGenerator(idNum) {
@@ -531,7 +531,7 @@ var pizzeriaMenuApp = {
 
       timeToResize = window.performance.getEntriesByName('measure_pizza_resize');
 
-      console.log('Time to resize pizzas: ' + timeToResize[timeToResize.length - 1].duration + 'ms');
+      // console.log('Time to resize pizzas: ' + timeToResize[timeToResize.length - 1].duration + 'ms');
     };
 
 
@@ -595,7 +595,7 @@ var pizzeriaMenuApp = {
       }
 
       oldWidth = elem.offsetWidth;
-      console.log(oldWidth);
+      // console.log(oldWidth);
       windowWidth = document.getElementById('randomPizzas').offsetWidth;
 
       oldSize = oldWidth / windowWidth;
@@ -730,20 +730,20 @@ var pizzeriaMenuApp = {
       for (i = numberOfEntries - 1; i > numberOfEntries - 11; i--) {
         sum = sum + times[i].duration;
       }
-      console.log('Average scripting time to generate last 10 frames: ' + sum / 10 + 'ms');
+      // console.log('Average scripting time to generate last 10 frames: ' + sum / 10 + 'ms');
     }
   }
 };
 
 
-console.log("creating the menu");
+// console.log("creating the menu");
 pizzeriaMenuApp.createPizzaMenu();
 
-console.log("creating resize control");
+// console.log("creating resize control");
 pizzeriaMenuApp.createResizerControl();
 
-console.log("setting the scroll handler");
+// console.log("setting the scroll handler");
 pizzeriaMenuApp.setScrollHandler();
 
-console.log("creating background pizzas");
+// console.log("creating background pizzas");
 pizzeriaMenuApp.createBackgroundPizzas();
