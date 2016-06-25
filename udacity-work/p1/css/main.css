@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Raleway Thin'), local('Raleway-Thin'), url(../font/raleway-100.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(../font/raleway-400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(../font/roboto-400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(../font/open-sans-400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+body {
+  max-width: 980px;
+  margin: 75px auto;
+}
+
+.logo-image {
+  width: 77px;
+  height: 77px;
+}
+
+.owner-card {
+  font-family: "Raleway";
+  text-align: right;
+  text-transform: uppercase;
+  padding-right: 6px;
+}
+
+.owner-name {
+  color: #2d3c49;
+  font-size: 60px;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+
+.owner-title {
+  color: #2d3c49;
+  font-size: 21px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.hr-style {
+  color: #8096ab;
+  background-color: #8096ab;
+  height: 3px;
+  border: 0;
+  box-shadow: 0 0px 3px #8096ab;
+}
+
+.items-section-header {
+  color: #7d97ad;
+}
+
+.items-section-header h3 {
+  font-size: 32px;
+  padding-left: 0.25em;
+  letter-spacing: 0.05em;
+}
+
+.featured-item {
+  color: #2d3c49;
+  text-align: center;
+  font-family: "Roboto";
+}
+
+.featured-item h4 {
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.featured-item a {
+  font-family: "Open Sans";
+  text-decoration: none;
+  color: inherit;
+}
+
+.anchor-wrapper {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 750px) {
+  .featured-item h4 {
+    font-size: 4vw;
+  }
+}

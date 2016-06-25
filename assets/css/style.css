@@ -1,1 +1,196 @@
-html {}
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 0.25rem;
+  text-align: left;
+  /*border: 1px solid #ccc;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.75em;
+}
+
+a {
+  color: black;
+  /*text-decoration: none;
+  border-bottom: 1px dashed black;*/
+}
+
+body  {
+  background-color: #ccc;
+  font-family: "Open Sans", Arial, sans-serif;
+  padding: 1em 0 0 0;
+  max-width: 20em;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  font-size: 18px;
+}
+
+nav {
+  /*margin-top: 1em;*/
+  width: 100%;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+nav li {
+  border: 1px solid black;
+  background-color: white;
+  list-style: none;
+  margin: 0;
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+nav li + li {
+  border-top: none;
+}
+
+section {
+  font-size: 0.95em;
+  background-color: #fff;
+  margin-top: 4em;
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 8px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section h3 {
+  font-size: 1.25em;
+  background-color: #ddd;
+  margin: 0 -0.45em 1em -0.45em;
+  padding: 0.5em 0.7em;
+  border-radius: 10px;
+}
+
+.section-explanation {
+  margin-bottom: 1.75em;
+}
+
+section p {
+  font-size: 0.95em;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.sub-section {
+  margin: 0 -0.5em;
+  padding: 0.7em 0.5em 1.4em 0.5em;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+.sub-section thead {
+  border-bottom: 1px solid #aaa;
+}
+
+.sub-section h4 {
+  padding-left: .1em;
+  font-size: 1.1em;
+}
+
+.project-links-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  /*align-items: center;*/
+}
+
+.project-links-container .project-state {
+  /*flex: 0 0 auto;*/
+  align-self: flex-start;
+  width: 44%;
+  font-size: 0.95em;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 1em;
+  padding: 0.50em;
+}
+
+.project-state li {
+  list-style: none;
+}
+
+.project-state li + li {
+  margin-top: 0.4em;
+  padding-left: 1em;
+  font-size: 0.9em;
+  text-align: left;
+  list-style: disc inside;
+}
+
+.course-info-table {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.course-info-table th {
+  vertical-align: top;
+  padding: 0.4em 0.2em 0.2em 0.4em;
+}
+
+.course-info-table tr {
+  padding: 1em 0 1.5em 0;
+}
+
+.course-info-table tr + tr {
+  border-top: 1px solid #aaa;
+}
+
+.course-title-cell {
+  vertical-align: top;
+  padding-left: 0.5em;
+  font-size: 0.9em;
+}
+
+.course-info-table li {
+  list-style: none;
+  font-size: 80%;
+}
+
+.course-info-table li:last-of-type {
+  padding-bottom: 1em;
+}
+
+section p + p, section li + li {
+  margin-top: 1em;
+}
+
+.sub-section + .sub-section {
+  margin-top: 3em;
+}
+
+nav#end {
+  margin: 4em auto 1em auto;
+}
+
+.smaller {
+  font-size: smaller;
+}
+
+.emph {
+  font-style: italic;
+}
